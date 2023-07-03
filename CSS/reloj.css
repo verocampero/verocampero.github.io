@@ -1,0 +1,145 @@
+@keyframes move-background {
+  0% { background-position: 50% 50%; }
+  25% { background-position: 0% 50%; }
+  50% { background-position: 50% 0%; }
+  75% { background-position: 100% 50%; }
+  100% { background-position: 50% 100%; }
+}
+
+body {
+  background: linear-gradient(to right, #434143, #a20a98, #535253);
+  background-size: 200% 200%;
+  animation: move-background 4s linear infinite;
+}
+
+
+
+  .content{
+    margin: auto;
+    height: 100vh;
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+  
+  }
+  
+  .vero {
+    color: white;
+    font-family: 'Cherry Bomb One', cursive;
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+    font-size: 15vw;
+    text-shadow: 3px 3px 3px black;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: typing 1s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+
+
+.vero2{
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+    font-size: 10vw;
+    text-shadow: 3px 3px 3px black;
+}
+
+
+.direccion{
+    color: white;
+   
+    margin: auto;
+    text-align: center;
+    padding: 8%;
+    font-size: 5vw;
+    text-shadow: 3px 3px 3px black;
+    text-decoration: none;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.direccion:hover{
+    color: rgb(91, 27, 90);
+}
+
+i{
+    transform-origin: 50% 0%;
+    animation: pendulum-swing 2s infinite ease-in-out;
+}
+@keyframes pendulum-swing {
+    0% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+}
+
+
+.vero3{
+  color: rgb(255, 255, 255);
+  font-family: 'Ysabeau Infant', sans-serif;  margin: auto;
+  text-align: center;
+  padding: 10%;
+  font-size: 10vw;
+  text-shadow: 3px 3px 3px black;
+  
+}
+
+
+
+hr{
+  
+  border-top: 3px solid #ffffff; 
+}
+
+.brazo1 {
+  position: absolute;
+  padding-left: 40%;
+  width: 100%;
+  animation: brindis-animation 2s infinite alternate;
+}
+
+.brazo2 {
+  position: absolute;
+  width: 60%;
+  animation: brindis-animation-2 2s infinite alternate;
+}
+
+@keyframes brindis-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(15%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes brindis-animation-2 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
