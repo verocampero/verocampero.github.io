@@ -1,0 +1,337 @@
+$primary: #3c3c3b;
+$danger: #36a8e0;
+$secondary: #bb2200;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  'secondary':$secondary
+);
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: $danger;
+    transition: width 0.3s ease, left 0.5s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+section.aire {
+  background-image: url(/img/mujer-sosteniendo-control-remoto-encender-calentador.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+section.aire div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding: 0.5rem;
+}
+section.aire h1 {
+  color: $danger;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  text-shadow: 0.3rem 0.1rem 0.5rem black;
+}
+
+.aire h2 {
+  color: $primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.fa-location-dot {
+  padding-right: 0.5rem;
+}
+
+.aire h3 {
+  color: $primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.instaladores {
+  background-color: $danger;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.instaladores h1 {
+  font-size: 1.5rem;
+}
+
+.instaladores div {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+}
+.fa-check {
+  margin-right: 1rem;
+}
+
+#contacto {
+  background-color: $primary;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactanos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
+.presupuesto {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.form {
+  background-color: $danger;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 5rem;
+  align-self: center;
+}
+
+.icons {
+  gap: 1rem;
+}
+
+
+
+.botonClima{
+  background: transparent;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  border: none;
+  border-radius: 100%;
+  top: 20%;
+  left: 80%;
+  box-shadow: 0.3rem 0.1rem 0.3rem rgba(0, 0, 0, 0.511);
+}
+.botonClima img {
+  width: 100%;
+
+}
+
+.mostrarClima { 
+  display: block;
+  animation: aparecer 1s forwards; 
+}
+.emailAlert{
+  display: none;
+  font-size: 0.8rem;
+}
+.telefonoAlert{
+  display: none;
+  font-size: 0.8rem;
+}
+
+.consultaAlert{
+  display: none;
+  font-size: 0.8rem;
+}
+
+
+@keyframes aparecer {
+  from {
+    transform: scale(0); 
+    opacity: 0; 
+  }
+  to {
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+  
+.contentIframe {
+position: fixed;
+overflow: hidden;
+width: 20%;
+height:70% ;
+top: 1%;
+left: 70%;
+display: flex;
+flex-wrap: wrap;
+display: none;
+
+}
+
+
+.bodyApi{
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border-radius: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  
+
+}
+#content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+ 
+
+}
+
+#caja2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+
+}
+div#caja2>img{
+    width: 70%;
+   
+}
+#ubicacion{
+    font-weight: 900;
+    font-size: 60%;
+    text-align: center;
+}
+#tempValor{
+    font-weight: 900;
+    font-size: 100%;
+    text-align: center;
+
+}
+div#caja3>h3,h1{
+    font-size: 50%;
+    text-align: center;
+    font-weight: 500;
+}
+#caja1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  #caja3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+ 
+
+    
+  }
+  #vientoVelocidad{
+    font-size: 80%;
+    font-weight:900;
+    text-align: center;
+
+  }
+  #tempDescrip{
+    text-align: center;
+
+    font-size: 80%;
+    font-weight: 500;
+  }
+  
+@media (min-width: 500px) {
+  section.aire h1 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  .aire h2 {
+    font-size: 1.5rem;
+  }
+
+  .aire h3 {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem;
+  }
+  li {
+    margin-left: 1rem;
+  }
+  section.aire {
+    background-position: center;
+    height: 100vh;
+  }
+  .contentIframe {
+    
+    width: 20%;
+  
+ 
+    }
+    
+    
+    .contentIframe iframe {
+      width: 30%;
+    
+    }
+   
+}
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
