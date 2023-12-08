@@ -150,22 +150,33 @@ li {
 
 .botonClima{
   background: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
   position: fixed;
   border: none;
   border-radius: 100%;
-  top: 20%;
+  top: 10%;
   left: 80%;
   box-shadow: 0.3rem 0.1rem 0.3rem rgba(0, 0, 0, 0.511);
 }
+.botonClima:hover{
+ 
+  transition: ease 1s;
+  transform: scale(1.5);
+  
+}
+
 .botonClima img {
   width: 100%;
 
 }
 
+
 .mostrarClima { 
   display: block;
   animation: aparecer 1s forwards; 
+  background: transparent;
+  backdrop-filter: blur(30px);
+  border-radius: 1%;
 }
 .emailAlert{
   display: none;
@@ -197,7 +208,7 @@ li {
 position: fixed;
 overflow: hidden;
 width: 20%;
-height:70% ;
+height:20% ;
 top: 1%;
 left: 70%;
 display: flex;
